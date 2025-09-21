@@ -1,0 +1,74 @@
+/* ====== Base Styles ====== */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f5f7fa;
+  margin: 0;
+  padding: 40px;
+  text-align: center;
+  color: #333;
+}
+
+/* ====== Title ====== */
+h2 {
+  color: #0077cc;
+  margin-bottom: 30px;
+}
+
+/* ====== Input and Dropdowns ====== */
+input, select {
+  padding: 10px;
+  width: 200px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+/* ====== Buttons ====== */
+button {
+  padding: 10px 20px;
+  margin: 10px 5px;
+  font-size: 16px;
+  background-color: #0077cc;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #005fa3;
+}
+
+/* ====== Result Section ====== */
+#result {
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #222;
+}
+
+#updated-date {
+  margin-top: 8px;
+  font-size: 14px;
+  color: #555;
+}
+
+/* ====== Spinner Loader ====== */
+.spinner {
+  display: none;
+  margin: 20px auto;
+  width: 40px;
+  height: 40px;
+  border: 5px solid #ddd;
+  border-top: 5px solid #0077cc;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+/* Spinner Animation */
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
